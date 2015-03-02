@@ -10,11 +10,17 @@ This is a simple wrapper for either
 
 that turns either into a Symfony style console command.
 
+
 I did this because I want to run multiple instances of ```php-resque``` using ```supervisord```
 and I found the original interface to ```php-resque``` based around environment variables
 a bit difficult/clumsy to deal with (maybe thats my problem not php-resque's).
 
 I got the inspiration for this idea from [https://github.com/mjphaynes/php-resque](https://github.com/mjphaynes/php-resque).
+
+## Dependency ##
+The ``composer.json`` file currently points at [robertblackwell/php-resque](https://github/robertblackwell/php-resque). It is a simple fork and edit to point it at the original php-rescue. 
+
+If you use this repo to wrap [robertblackwell/php-resque](https://github/robertblackwell/php-resque) be aware that your php will need the __setproctitle__ extension. Thats why I forked the original php-rescue in the first place.
 
 ## The command ##
 
