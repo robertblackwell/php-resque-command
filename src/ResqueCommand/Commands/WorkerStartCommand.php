@@ -19,8 +19,10 @@ class WorkerStartCommand extends WorkerBaseCommand
             ->setDescription('start a single worker process ')
             ->setDefinition(array(
 
-                new InputOption('app_include', "app_include|-a|--app", 
-							InputOption::VALUE_OPTIONAL, 'a comma separated list of php files to be include', ''),
+                new InputOption('app_include', "app_include|-a|--app_include",
+						InputOption::VALUE_IS_ARRAY + InputOption::VALUE_OPTIONAL,
+						//12,
+						'a comma separated list of php files to be include', []),
 							
                 new InputOption('redis_server', "redis_server|-r|--redis_server", 
 							InputOption::VALUE_OPTIONAL, 'The host id for the redis server ip:port', '127.0.0.1:6379'),

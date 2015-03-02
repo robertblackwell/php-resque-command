@@ -13,6 +13,7 @@ class ResqueWrapper
 		    $blocking=true
 		)
 		{
+			if( is_string($app_requires)) $app_requires = [$app_requires];
 			if( is_array($app_requires) ){
 			    foreach($app_requires as $file) {
 			        if( ! file_exists($file) ){
