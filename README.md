@@ -27,7 +27,7 @@ It takes the following possible options:
 
 -	__app_requires__ : a path to a php file that will be require_once by the command to include classes required to actually perform some jobs.
 
--	__redis_server__ : something like '127.0.,0.1:6379'
+-	__redis_server__ : something like '127.0.0.1:6379'
 -	__redis_index__ : the index number of the reds database to be used by this worker.
 -	__queue__ : the name of the single queue to be serviced by the worker.
 -	__logging__: a switch to enable console logging.
@@ -43,7 +43,7 @@ deposited in
 
 ## Beware of PHP version/extensions ##
 
-The resulting phar file can be executed a command like any other binary/shell script by
+The resulting phar file can be executed as a command like any other binary/shell script by entering
 
 	resque_cmd .....
 	
