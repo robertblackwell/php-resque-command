@@ -5,5 +5,5 @@
 	--redis_server="127.0.0.1:6379" \
 	-x "9" \
 	--logging \
-	-u "queue" \
+	--queue="queue" \
 	--interval=6

@@ -53,10 +53,10 @@ class WorkerStartCommand extends WorkerBaseCommand
 			$app_include,
 			$redis_server,
 			$redis_index,
-			$logging,
 			$queue,
+			$logging,
 			$interval,
-			$blocking
+			false
 		);
 
     }    	

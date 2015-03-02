@@ -28,7 +28,7 @@ class ResqueWrapper
 
 		    $logger->log(
 		        \Psr\Log\LogLevel::NOTICE,
-		        "Starting background processor queue(  {queue} ) interval: {interval} (seconds) count: {count} ",
+		        "Starting background processor queue(  {$queue} ) interval: {$interval} (seconds)  ",
 		        ['queue' => $queue, 'interval' => $interval]
 		    );
 
