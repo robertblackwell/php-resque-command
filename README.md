@@ -45,15 +45,15 @@ deposited in
 
 The resulting phar file can be executed as a command like any other binary/shell script by entering
 
-	resque_cmd .....
+	resque_cmd.phar .....
 	
 as the phar contains the required 
 
-	#!/usr/bin/php 
+	#!/usr/bin/env php 
 	
-line. But alas this does not work as (my fork at least) requires the php extension for ``setproctitle()`` and that extension is not available (on my development systems)
-at ``/usr/bin/php``.
+line. So the correct php version/installation __should__ be found.
 
-If this is your situation also then you will need to enter:
+But beware you __may__ have to run it by entering
 
-	php resque_cmd ....
+	php resque_cmd.phar ......
+
