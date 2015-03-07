@@ -47,6 +47,10 @@ deposited in
 
 	 build/resque_cmd.phar`
 
+## Installation ##
+
+`make install` will deposit the phar file in ~/bin
+
 ## Beware of PHP version/extensions ##
 
 The resulting phar file can be executed as a command like any other binary/shell script by entering
