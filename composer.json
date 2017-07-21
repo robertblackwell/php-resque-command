@@ -32,7 +32,7 @@
         "ext-xdebug":"*",
         "ext-zip" : "*",
         
-		"chrisboulton/php-resque": "dev-master",
+		"chrisboulton/php-resque": "1.2.x",
         "symfony/console" : "@dev"
     },
     "autoload": {
