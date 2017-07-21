@@ -1,10 +1,10 @@
 
 {
-    "name":"robertblackwell/php-resque-cmd",
+    "name":"robertblackwell/php-resque-command",
     "description": "php-resque as a symfony style command",
     "keywords": ["resque"],
     "type": "command",
-    "homepage": "https://github.com/robertblackwell/php-resque-cmd",
+    "homepage": "https://github.com/robertblackwell/php-resque-command",
     "license": "MIT",
     "authors": [
         {
