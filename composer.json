@@ -1,7 +1,7 @@
 
 {
     "name":"robertblackwell/php-resque-cmd",
-    "description": "php-resque as a symfony stle command",
+    "description": "php-resque as a symfony style command",
     "keywords": ["resque"],
     "type": "command",
     "homepage": "https://github.com/robertblackwell/php-resque-cmd",
@@ -12,13 +12,7 @@
             "homepage": "https://github.com/robertblackwell"
         }
     ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/robertblackwell/php-resque.git"
-        }
-    ],
-    
+    "bin" : ["bin/resque_cmd"],
     "require":{
 		
         "php": ">=5.5.0",
@@ -27,7 +21,6 @@
         "ext-hash":"*",
         "ext-json":"*",
         "ext-mcrypt":"*",
-        "ext-mysql":"*",
         "ext-mysqli":"*",
         "ext-openssl":"*",
         "ext-pcntl":"*",
