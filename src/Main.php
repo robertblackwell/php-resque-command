@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 // app/console
-require dirname(dirname(__FILE__))."/vendor/autoload.php";
+require_once dirname(dirname(__FILE__))."/vendor/autoload.php";
 use ResqueCommand\Commands\WorkerStartCommand;
 
 use Symfony\Component\Console\Application;

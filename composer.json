@@ -12,7 +12,12 @@
             "homepage": "https://github.com/robertblackwell"
         }
     ],
-    "bin" : ["bin/resque_cmd"],
+	"scripts" :{
+		"post-install-cmd":[
+			"composer install"
+		]
+	},
+    "bin" : ["bin/resque_cmd", "bin/resque_cmd.php"],
     "require":{
 		
         "php": ">=5.5.0",
