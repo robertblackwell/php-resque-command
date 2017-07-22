@@ -38,8 +38,8 @@
         "ext-xdebug":"*",
         "ext-zip" : "*",
         
-		"chrisboulton/php-resque": "dev-master",
-        "symfony/console" : "@dev"
+		"chrisboulton/php-resque": "1.2",
+        "symfony/console" : "*"
     },
     "autoload": {
         "psr-0": {"ResqueCommand": "src/"}

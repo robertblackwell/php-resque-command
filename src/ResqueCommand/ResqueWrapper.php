@@ -8,7 +8,8 @@ class ResqueWrapper
 		    $redisServer,   // in the form "127.0.0.1:9367
 		    $redisDatabase, // database index eg, 9
 		    $queue,         // string
-		    $logLevel=false, //turns on/off INFO DEBUG messages only - more important are always ON
+		    $logLevel=Resque_Worker::LOG_VERBOSE, //turns on/off INFO DEBUG 
+		                                         //messages only - more important are always ON
 		    $interval=5,
 		    $blocking=true
 		)
@@ -23,14 +24,13 @@ class ResqueWrapper
 			        require_once $file;
 			    }
 			}
-		    $logger = new \Resque_Log($logLevel);
 
 		    \Resque::setBackend($redisServer, $redisDatabase);
 
 		    $worker = new \Resque_Worker([$queue]);
-		    $worker->setLogger($logger);
+		    $worker->logLevel = $logLevel;
 
-		    $logger->log(\Psr\Log\LogLevel::NOTICE, 'Starting worker {worker}', array('worker' => $worker));
+		    $worker->log('Starting worker {worker}');
 		    $worker->work($interval, $blocking);
 		}
 }	
