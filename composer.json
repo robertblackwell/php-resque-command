@@ -17,7 +17,7 @@
 			"composer install"
 		]
 	},
-    "bin" : ["bin/resque_cmd.php"],
+    "bin" : ["bin/php_resque", "bin/resque_cmd.php"],
     "require":{
 		
         "php": ">=5.5.0",
