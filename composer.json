@@ -1,6 +1,7 @@
 
 {
     "name":"robertblackwell/php-resque-command",
+    "version" : "1.0.0",
     "description": "php-resque as a symfony style command",
     "keywords": ["resque"],
     "type": "command",
@@ -37,7 +38,7 @@
         "ext-xdebug":"*",
         "ext-zip" : "*",
         
-		"chrisboulton/php-resque": "1.2.x",
+		"chrisboulton/php-resque": "dev-master",
         "symfony/console" : "@dev"
     },
     "autoload": {
